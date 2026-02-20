@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agriculture Product Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f9f4;
+        }
+        h1 {
+            color: green;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Agriculture Product Marketing Website</h1>
+
+    <h2>Steps in Agricultural Product Marketing (Ordered List)</h2>
+    <ol>
+        <li>Production of crops</li>
+        <li>Harvesting</li>
+        <li>Grading and Sorting</li>
+        <li>Packaging</li>
+        <li>Transportation</li>
+        <li>Distribution to Markets</li>
+        <li>Retail Selling</li>
+    </ol>
+
+    <h2>Our Agriculture Products (Unordered List)</h2>
+    <ul>
+        <li>Rice</li>
+        <li>Wheat</li>
+        <li>Maize</li>
+        <li>Fresh Vegetables</li>
+        <li>Fruits</li>
+        <li>Pulses</li>
+        <li>Organic Fertilizers</li>
+    </ul>
+
+    <h2>Product Price List (Table)</h2>
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price (per kg)</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>Rice</td>
+            <td>Grains</td>
+            <td>$2</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>Wheat</td>
+            <td>Grains</td>
+            <td>$1.5</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>Tomatoes</td>
+            <td>Vegetables</td>
+            <td>$3</td>
+            <td>Limited</td>
+        </tr>
+        <tr>
+            <td>Mangoes</td>
+            <td>Fruits</td>
+            <td>$4</td>
+            <td>Seasonal</td>
+        </tr>
+    </table>
+
+</body>
+</html>
