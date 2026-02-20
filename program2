@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agriculture Product Marketing Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4;
+        }
+
+        header {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #e6ffe6;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: darkgreen;
+        }
+
+        section {
+            padding: 30px;
+            display: none;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .active {
+            display: block;
+        }
+
+        form input, select {
+            padding: 8px;
+            width: 250px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function showSection(id) {
+            var sections = document.querySelectorAll("section");
+            sections.forEach(section => section.style.display = "none");
+            document.getElementById(id).style.display = "block";
+        }
+
+        window.onload = function() {
+            showSection('home');
+        }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1>Agriculture Product Marketing Website</h1>
+    <h3>Connecting Farmers Directly to Buyers</h3>
+</header>
+
+<nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('login')">Login</a>
+    <a href="#" onclick="showSection('register')">Registration</a>
+    <a href="#" onclick="showSection('catalogue')">Product Catalogue</a>
+</nav>
+
+<!-- Home Section -->
+<section id="home">
+    <h2>Welcome to Our Agriculture Marketing Platform</h2>
+    <p>
+        This platform helps farmers sell their products directly to buyers,
+        distributors, and retailers without middlemen.
+    </p>
+
+    <h3>Our Products Include:</h3>
+    <ul>
+        <li>Rice</li>
+        <li>Wheat</li>
+        <li>Fresh Vegetables</li>
+        <li>Seasonal Fruits</li>
+        <li>Organic Fertilizers</li>
+    </ul>
+</section>
+
+<!-- Login Section -->
+<section id="login">
+    <h2>Login</h2>
+    <form>
+        Username:<br><br>
+        <input type="text" required><br><br>
+
+        Password:<br><br>
+        <input type="password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+</section>
+
+<!-- Registration Section -->
+<section id="register">
+    <h2>User Registration</h2>
+    <form>
+        Full Name:<br><br>
+        <input type="text" required><br><br>
+
+        Email:<br><br>
+        <input type="email" required><br><br>
+
+        User Type:<br><br>
+        <select>
+            <option>Farmer</option>
+            <option>Buyer</option>
+            <option>Distributor</option>
+        </select><br><br>
+
+        Phone Number:<br><br>
+        <input type="text"><br><br>
+
+        Password:<br><br>
+        <input type="password" required><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</section>
+
+<!-- Catalogue Section -->
+<section id="catalogue">
+    <h2>Available Agriculture Products</h2>
+
+    <table>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price per Kg ($)</th>
+            <th>Availability</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Rice</td>
+            <td>Grains</td>
+            <td>2.00</td>
+            <td>In Stock</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Wheat</td>
+            <td>Grains</td>
+            <td>1.80</td>
+            <td>In Stock</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Tomatoes</td>
+            <td>Vegetables</td>
+            <td>3.00</td>
+            <td>Limited</td>
+        </tr>
+
+        <tr>
+            <td>104</td>
+            <td>Mangoes</td>
+            <td>Fruits</td>
+            <td>4.00</td>
+            <td>Seasonal</td>
+        </tr>
+
+        <tr>
+            <td>105</td>
+            <td>Organic Fertilizer</td>
+            <td>Farming Supplies</td>
+            <td>10.00</td>
+            <td>Available</td>
+        </tr>
+
+    </table>
+</section>
+
+</body>
+</html>
